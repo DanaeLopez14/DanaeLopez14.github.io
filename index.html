@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portada Portafolio</title>
+    <style>
+    @import url(https://fonts.googleapis.com/css?family=Cabin+Sketch);
+    @import url(https://fonts.googleapis.com/css?family=Rubik+Doodle+Shadow);
+        h1 {
+            text-shadow: 4px 4px 4px #aaa;
+            text-align: center;
+            font-family: "Rubik Doodle Shadow";
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url(num.jpg);
+            background-size: 100vw 100vh;
+            background-repeat: no-repeat;
+        }
+        .capa{
+            width: 100%;
+            height: 100vh;
+            position: absolute;
+            background: #38272b;
+            opacity: 0.7;
+            padding: 60px 60px;
+        }
+        .texto{
+            z-index: 1;
+            width: 540px;
+            height: 440px;
+            padding: 20px 20px;
+            font-size: 15px;
+            line-height: 1.5;
+            background-color: white;
+            box-shadow: 1px 5px 25px rgba(0,0,0,0.45);
+            border-radius: 5px;
+        }
+        .textimg{
+            float: center;
+            border-radius: 10px;
+            margin-right: 8px;
+            width: 220px;
+            height: 200px;
+            transition: transform 0.5s;
+        }
+        .textimg:hover {
+            transform: scale(1.05);
+            box-shadow: 2px 2px 2px 2px yellow;
+        }
+        button {text-align: center; background-color: rgb(249, 200, 38); color:rgb(210, 30, 33); padding:5px; text-decoration: none; display: inline-block; }
+        button:hover{
+            box-shadow: 2px 2px 2px 2px rgb(255, 47, 0);
+        }
+        p{
+            font-family: "Cabin Sketch";
+            color: #1727d6;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div class="texto">
+            <h1>Portafolio de evidencias</h1>
+            <a href="https://historiaencomentarios.com/2017/03/02/los-antecedentes-y-causas-de-la-primera-guerra-mundial/" target="_self"><img class="textimg" src="ff.png" alt="Imagen no disponible"></a>
+            <figcaption>&#128071<i>Corte 2</i>&#128071</figcaption>
+            <div class="btn-center">   
+            <button onclick="document.location= 'https://historiaencomentarios.com/2017/03/02/los-antecedentes-y-causas-de-la-primera-guerra-mundial/'" target="_self"> Open </button>
+            </div>  
+            <p>Danae Becerril López</p>
+            <p>Programación Web I</p>
+            <p>Carrera de Ingeniería en Tecnologías de la Información</p>
+        </div>
+    </center>  
+</body>
+</html>
